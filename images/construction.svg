@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" width="640" height="300" role="img" aria-label="Бэлтгэгдэж байна">
+  <defs>
+    <pattern id="stripes" width="40" height="40" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="40" height="40" fill="#f5b32e"/>
+      <rect width="20" height="40" fill="#2f3640"/>
+    </pattern>
+  </defs>
+
+  <rect width="640" height="300" rx="10" fill="#f7f7f5"/>
+
+  <!-- Warning sign -->
+  <g transform="translate(320 118)">
+    <path d="M0 -62 L58 40 L-58 40 Z" fill="#f5b32e" stroke="#2f3640" stroke-width="7" stroke-linejoin="round"/>
+    <rect x="-6" y="-30" width="12" height="42" rx="6" fill="#2f3640"/>
+    <circle cx="0" cy="26" r="7" fill="#2f3640"/>
+  </g>
+
+  <!-- Barrier bar -->
+  <rect x="70" y="196" width="500" height="34" rx="4" fill="url(#stripes)"/>
+  <rect x="70" y="196" width="500" height="34" rx="4" fill="none" stroke="#2f3640" stroke-width="4"/>
+  <rect x="112" y="230" width="16" height="44" fill="#2f3640"/>
+  <rect x="512" y="230" width="16" height="44" fill="#2f3640"/>
+
+  <text x="320" y="285" text-anchor="middle" font-family="Helvetica, Arial, sans-serif"
+        font-size="26" font-weight="bold" fill="#2f3640">Бэлтгэгдэж байна</text>
+</svg>

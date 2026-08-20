@@ -1,9 +1,21 @@
 default:
   image: ruby:3.2
+  cache:
+    key:
+      files:
+        - Gemfile.lock
+    paths:
+      - vendor/ruby
 
 create-pages:
+  stage: deploy
   script:
-    - gem install bundler
-    - bundle install
+    - bundle config set --local path vendor
+    - bundle install --jobs 4
     - bundle exec jekyll build -d public
-  pages: true  # specifies that this is a Pages job and publishes the default public directory
+  artifacts:
+    paths:
+      - public
+  pages: true # publishes the public/ directory as GitLab Pages
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH

@@ -1,0 +1,31 @@
+title: Хичээлүүд
+description: Математик, физик, информатик, электроник, роботикийн цахим хичээлүүд
+lang: mn
+
+# strapdown.js loads edu/scripts/themes/<theme>.min.css at runtime.
+# Every bundled theme is Bootstrap 2 EXCEPT bootstrap.min.css (Bootswatch 3.3.4),
+# which is strapdown's built-in fallback. Always keep a Bootstrap 2 default here
+# so no page silently falls back to the mismatched Bootstrap 3 file.
+theme_default: united
+
+nav:
+  - title: Нүүр хуудас
+    url: /
+  - title: Математик
+    url: /edu/html/math.html
+  - title: Физик
+    url: /edu/html/physics.html
+  - title: Информатик
+    url: /edu/html/informatics.html
+  - title: Электроник
+    url: /edu/html/electronics.html
+  - title: Роботик
+    url: /edu/html/robotics.html
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  # Unreferenced draft kept in the repo but not published.
+  - edu/mds
