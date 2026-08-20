@@ -1,4 +1,4 @@
-title: Хичээлүүд
+title: 
 description: Математик, физик, информатик, электроник, роботикийн цахим хичээлүүд
 lang: mn
 
@@ -9,7 +9,7 @@ lang: mn
 theme_default: united
 
 nav:
-  - title: Нүүр хуудас
+  - title: 
     url: /
   - title: Математик
     url: /edu/html/math.html
