@@ -1,4 +1,4 @@
-title: Хичээлүүд
+title: Bolorkhuu
 description: Математик, физик, информатик, электроник, роботикийн цахим хичээлүүд
 lang: mn
 
@@ -9,7 +9,7 @@ lang: mn
 theme_default: united
 
 nav:
-  - title: Нүүр хуудас
+  - title: Blog
     url: /
   - title: Математик
     url: /edu/html/math.html
