@@ -8,3 +8,4 @@ public/
 # Bundler
 /vendor/
 /.bundle/
+.ssh
