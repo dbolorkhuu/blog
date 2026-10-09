@@ -28,6 +28,7 @@ RUN apt-get update; \
         sudo \
         tzdata \
         vim \
+        openssh-client \
         zlib1g-dev; \
     #--------------------
     # Generate the locale referenced by LANG/LC_ALL above
