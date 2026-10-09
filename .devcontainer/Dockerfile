@@ -42,6 +42,7 @@ RUN apt-get update; \
     #--------------------
     # Configure `root`s secure shell
     #--------------------
+
     mkdir -p "/root/.ssh"; \
     echo -e "Host *\tStrictHostKeyChecking no\n\n" > "/root/.ssh/config"; \
     chmod 0400 "/root/.ssh/config"; \

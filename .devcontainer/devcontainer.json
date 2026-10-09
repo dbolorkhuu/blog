@@ -4,8 +4,14 @@
   "build": {
       "dockerfile": "Dockerfile"
     },
-  "postAttachCommand": "bundle config set --local path vendor/bundle && bundle install && bundle exec jekyll serve",
+  // "postAttachCommand": "bundle config set --local path vendor/bundle && bundle install && bundle exec jekyll serve",
   "forwardPorts": [4000],
+  "runArgs": [
+    "--hostname",
+    "rg-dev",
+    "--network",
+    "host"
+  ],
   "portsAttributes": {
     "4000": {
       "label": "Jekyll serve",
