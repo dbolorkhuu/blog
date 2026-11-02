@@ -1,5 +1,7 @@
 .PHONY: all push run
 
+PORT ?= 4001
+
 all: push
 
 push:
@@ -11,4 +13,4 @@ push:
 run:
 	bundle config set --local path vendor/bundle && \
 	bundle install && \
-	bundle exec jekyll serve
+	bundle exec jekyll serve --port $(PORT)

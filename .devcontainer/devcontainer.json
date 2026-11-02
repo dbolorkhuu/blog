@@ -2,19 +2,20 @@
   "name": "blog",
   "containerUser": "agile",
   "build": {
-      "dockerfile": "Dockerfile"
-    },
-  "forwardPorts": [4000],
+    "dockerfile": "Dockerfile"
+  },
   "runArgs": [
     "--hostname",
     "rg-dev",
     "--network",
     "host"
   ],
-  "portsAttributes": {
-    "4000": {
-      "label": "Jekyll serve",
-      "onAutoForward": "openPreview"
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "remote.autoForwardPorts": false,
+        "remote.restoreForwardedPorts": false
+      }
     }
   }
 }
