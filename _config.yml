@@ -9,7 +9,7 @@ lang: mn
 theme_default: united
 
 nav:
-  - title: Blog
+  - title: Блог
     url: /
   - title: Математик
     url: /edu/html/math.html
